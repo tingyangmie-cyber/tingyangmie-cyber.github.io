@@ -206,7 +206,7 @@
 
   .projects-grid {
     max-width: 1100px; margin: 0 auto;
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px;
   }
 
   /* Featured card — spans 2 cols */
@@ -393,7 +393,6 @@
   <ul class="nav-links">
     <li><a href="#projects">Projects</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#setup">GitHub Setup</a></li>
     <li><a href="/cdn-cgi/l/email-protection#3f46504a7f5a525e5653115c5052" class="nav-cta">Contact me</a></li>
   </ul>
 </nav>
@@ -483,7 +482,7 @@
   <div class="projects-grid">
 
     <!-- FEATURED: CTS Tool -->
-    <a class="project-card featured reveal" href="cts-portfolio.html">
+    <a class="project-card reveal" href="cts-portfolio.html">
       <div class="card-header">
         <div class="card-icon" style="background:#eff6ff">📦</div>
         <div class="card-badges">
@@ -523,15 +522,6 @@
       </div>
     </a>
 
-    <!-- Placeholder: Power BI -->
-    <div class="project-card placeholder">
-      <div class="placeholder-body">
-        <div class="placeholder-icon">🔷</div>
-        <strong>Power BI Dashboard</strong>
-        <p>Coming soon — supply chain or ops analytics dashboard</p>
-      </div>
-    </div>
-
     <!-- Databricks Pipeline -->
     <a class="project-card reveal" href="databricks-pipeline.html">
       <div class="card-header">
@@ -558,124 +548,9 @@
       </div>
     </a>
 
-    <!-- Placeholder: Process Improvement -->
-    <div class="project-card placeholder">
-      <div class="placeholder-body">
-        <div class="placeholder-icon">📈</div>
-        <strong>Process Improvement Case Study</strong>
-        <p>Coming soon — ops problem, data-driven solution</p>
-      </div>
-    </div>
-
-    <!-- Placeholder: Excel Tools -->
-    <div class="project-card placeholder">
-      <div class="placeholder-body">
-        <div class="placeholder-icon">📊</div>
-        <strong>Excel Automation Tool</strong>
-        <p>Coming soon — another Excel / automation project</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- GITHUB SETUP GUIDE -->
-<section class="setup-section" id="setup">
-  <div class="setup-inner">
-    <div class="section-eyebrow reveal">How to publish this portfolio</div>
-    <h2 class="reveal" style="font-family:'Syne',sans-serif; font-size:clamp(26px,3.5vw,40px); font-weight:800; color:var(--ink); letter-spacing:-.025em; margin-bottom:12px;">
-      Live on GitHub Pages<br>in under 10 minutes
-    </h2>
-    <p class="reveal" style="font-size:16px; color:var(--muted); max-width:520px; line-height:1.7;">
-      Free hosting, a professional URL, and a GitHub profile that shows up on your CV — 
-      no coding experience needed beyond copying files.
-    </p>
-
-    <div class="setup-grid">
-      <div class="steps reveal">
-
-        <div class="step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <h4>Create a GitHub account</h4>
-            <p>Go to <strong>github.com</strong> and sign up. Use a professional username — ideally your name (e.g. <em>john-smith-data</em>). This appears in your portfolio URL.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <h4>Create a special repository</h4>
-            <p>Click <strong>New repository</strong>. Name it exactly: <em>yourusername.github.io</em> — this is the magic name GitHub Pages looks for. Set it to Public.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <h4>Upload your files</h4>
-            <p>Click <strong>uploading an existing file</strong>, then drag and drop both HTML files. Commit the changes.</p>
-            <code>index.html          ← this homepage<br>cts-portfolio.html  ← CTS project page</code>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            <h4>Enable GitHub Pages</h4>
-            <p>Go to repository <strong>Settings → Pages</strong>. Under Source, select <em>Deploy from branch → main → / (root)</em>. Click Save.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-num">5</div>
-          <div class="step-content">
-            <h4>Your site is live ✓</h4>
-            <p>Within 2 minutes, your portfolio is live at:<br><strong>yourusername.github.io</strong><br>Add this URL to your CV, LinkedIn, and email signature.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="reveal">
-        <div class="folder-struct">
-          <h4>Your repository structure</h4>
-          <div class="file-tree">
-<span class="folder">📁 yourusername.github.io/</span>
-│
-├── <span class="file-html">index.html</span>         <span class="comment">← portfolio homepage</span>
-├── <span class="file-html">cts-portfolio.html</span> <span class="comment">← CTS project detail</span>
-│
-├── <span class="comment">── add as you build ──</span>
-├── <span class="file-html">powerbi-project.html</span>
-├── <span class="file-html">python-project.html</span>
-├── <span class="file-html">sql-project.html</span>
-│
-└── <span class="folder">📁 assets/</span>           <span class="comment">← optional screenshots</span>
-    ├── <span class="file-other">cts-screenshot.png</span>
-    └── <span class="file-other">dashboard-preview.png</span>
-          </div>
-        </div>
-
-        <div class="tip-box reveal">
-          <strong>💡 Pro tip — personalise before you publish</strong>
-          In <em>index.html</em>, replace these 4 things:<br>
-          1. <strong>"Ting Yang"</strong> in the nav brand<br>
-          2. The hero bio paragraph — make it yours<br>
-          3. <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7e07110b3e1b131f1712501d1113">[email&#160;protected]</a></strong> — your real email<br>
-          4. The stat pills — update with your real numbers
-        </div>
-
-        <div class="tip-box reveal" style="margin-top:14px; background:rgba(99,102,241,.08); border-color:rgba(99,102,241,.2); color:#4f46e5;">
-          <strong>📌 Add to LinkedIn</strong>
-          Go to your LinkedIn profile → <em>Add profile section → Featured → Links</em>.
-          Paste your GitHub Pages URL. Recruiters click this more than you'd think.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 <!-- FOOTER -->
 <footer>
