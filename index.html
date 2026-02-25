@@ -81,7 +81,22 @@
   }
   .hero-inner {
     position: relative; z-index: 1;
-    max-width: 760px;
+    max-width: 1100px; width: 100%;
+    display: flex; align-items: center;
+    gap: 64px;
+  }
+  .hero-text { flex: 1; max-width: 620px; }
+  .hero-photo {
+    flex-shrink: 0;
+    width: 260px; height: 260px;
+    border-radius: 50%; overflow: hidden;
+    box-shadow: 0 20px 60px rgba(10,15,30,.15);
+    border: 4px solid var(--white);
+  }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  @media (max-width: 768px) {
+    .hero-inner { flex-direction: column-reverse; gap: 32px; }
+    .hero-photo { width: 160px; height: 190px; }
   }
   .hero-tag {
     display: inline-flex; align-items: center; gap: 8px;
@@ -374,7 +389,7 @@
 
 <!-- NAV -->
 <nav>
-  <a class="brand" href="#"><em>◈</em> YourName</a>
+  <a class="brand" href="#"><em>◈</em> Ting Yang</a>
   <ul class="nav-links">
     <li><a href="#projects">Projects</a></li>
     <li><a href="#about">About</a></li>
@@ -387,6 +402,7 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-inner">
+  <div class="hero-text">
     <div class="hero-tag">Open to work · Data Analyst &amp; BI</div>
     <h1>
       Turning messy data<br>
@@ -415,6 +431,10 @@
         <div class="stat-lbl">Manual steps<br>in CTS pipeline</div>
       </div>
     </div>
+  </div>
+  <div class="hero-photo">
+    <img src="headshot.png" alt="Ting Yang">
+  </div>
   </div>
 </section>
 
@@ -638,7 +658,7 @@
         <div class="tip-box reveal">
           <strong>💡 Pro tip — personalise before you publish</strong>
           In <em>index.html</em>, replace these 4 things:<br>
-          1. <strong>"YourName"</strong> in the nav brand<br>
+          1. <strong>"Ting Yang"</strong> in the nav brand<br>
           2. The hero bio paragraph — make it yours<br>
           3. <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7e07110b3e1b131f1712501d1113">[email&#160;protected]</a></strong> — your real email<br>
           4. The stat pills — update with your real numbers
@@ -658,7 +678,7 @@
 <!-- FOOTER -->
 <footer>
   <div>
-    <div class="footer-brand">◈ <span>YourName</span></div>
+    <div class="footer-brand">◈ <span>Ting Yang</span></div>
     <p style="margin-top:6px">Data Analyst · Supply Chain Ops · Open to opportunities</p>
   </div>
   <div class="footer-links">
